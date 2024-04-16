@@ -1,5 +1,6 @@
 import torch
 import math
+import numpy as np
 
 def dict_adding(dict_, key, value):
     if key in dict_:
@@ -120,13 +121,13 @@ def load_data(x, batch_size, context_length, device):
            device: torch.device
     Output: source: (batch_size, context_length), target: (batch_size, context_length)
     """
-    x = torch.tensor(x.astype(int))
-    rand_idx = torch.randint(0, len(x) - context_length, (batch_size,)) # (batch_size,)
-    source = torch.stack([x[idx:idx+context_length] for idx in rand_idx], dim=0).to(device) # (batch_size, context_length)
-    target = torch.stack([x[idx+1:idx+context_length+1] for idx in rand_idx], dim=0).to(device) # (batch_size, context_length)
+    # x is numpy array
+    rand_idx = np.random.randint(0, len(x) - context_length, batch_size) # (batch_size,)
+    source = np.array([x[idx:idx+context_length] for idx in rand_idx]).astype(int) # (batch_size, context_length)
+    target = np.array([x[idx+1:idx+context_length+1] for idx in rand_idx]).astype(int) # (batch_size, context_length)
     
-    return source, target
-
+    return torch.from_numpy(source).to(device), torch.from_numpy(target).to(device)
+    
 def save_checkpoint(model, optimizer, iteration, out):
     """
     should dump all the state from the first
