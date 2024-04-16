@@ -1,0 +1,18 @@
+Step: 0, Loss: 9.369051933288574
+Validation Loss: 7.940310478210449, Perplexity: 2808.232177734375
+Traceback (most recent call last):
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/train.py", line 125, in <module>
+    save_checkpoint(model, optimizer, current_step, checkpoint_path)
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/utils.py", line 141, in save_checkpoint
+    torch.save({"model_state": model_state, "optimizer_state": optimizer_state, "iteration": iteration}, out)
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/site-packages/torch/serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/site-packages/torch/serialization.py", line 502, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/site-packages/torch/serialization.py", line 473, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+RuntimeError: Parent directory /nlp/scr/jiangm/cs336/a1_data/ckps does not exist.

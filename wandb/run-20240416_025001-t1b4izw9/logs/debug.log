@@ -1,0 +1,28 @@
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_setup.py:_flush():76] Configure stats pid to 2948076
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_setup.py:_flush():76] Loading settings from /sailhome/jiangm/.config/wandb/settings
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_setup.py:_flush():76] Loading settings from /sailhome/jiangm/spring2024-assignment1-basics/wandb/settings
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-16 02:50:01,563 WARNING MainThread:2948076 [wandb_setup.py:_flush():76] Could not find program at -m cs336_basics.train
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program': '-m cs336_basics.train'}
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_init.py:_log_setup():521] Logging user logs to /sailhome/jiangm/spring2024-assignment1-basics/wandb/run-20240416_025001-t1b4izw9/logs/debug.log
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_init.py:_log_setup():522] Logging internal logs to /sailhome/jiangm/spring2024-assignment1-basics/wandb/run-20240416_025001-t1b4izw9/logs/debug-internal.log
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_init.py:init():561] calling init triggers
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'lr': 0.001, 'num_layers': 4, 'num_heads': 16, 'd_model': 512, 'd_ff': 2048, 'attn_pdrop': 0.1, 'residual_pdrop': 0.1, 'batch_size': 256, 'val_batch_size': 128, 'context_length': 256, 'checkpoint': '', 'resume': False, 'dataset': 'tinystories', 'grad_clip': 1.0, 'num_steps': 50000, 'group_name': 'ts_lr_search'}
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_init.py:init():611] starting backend
+2024-04-16 02:50:01,563 INFO    MainThread:2948076 [wandb_init.py:init():615] setting up manager
+2024-04-16 02:50:01,564 INFO    MainThread:2948076 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-16 02:50:01,567 INFO    MainThread:2948076 [wandb_init.py:init():623] backend started and connected
+2024-04-16 02:50:01,571 INFO    MainThread:2948076 [wandb_init.py:init():715] updated telemetry
+2024-04-16 02:50:01,595 INFO    MainThread:2948076 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-16 02:50:01,859 INFO    MainThread:2948076 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-16 02:50:01,946 INFO    MainThread:2948076 [wandb_run.py:_on_init():2366] got version response 
+2024-04-16 02:50:01,946 INFO    MainThread:2948076 [wandb_init.py:init():799] starting run threads in backend
+2024-04-16 02:50:04,756 INFO    MainThread:2948076 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-16 02:50:04,756 INFO    MainThread:2948076 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-16 02:50:04,757 INFO    MainThread:2948076 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-16 02:50:04,757 INFO    MainThread:2948076 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-16 02:50:04,757 INFO    MainThread:2948076 [wandb_init.py:init():842] run started, returning control to user process

@@ -1,0 +1,132 @@
+{
+    "os": "Linux-5.4.0-107-generic-x86_64-with-glibc2.31",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-04-16T09:33:25.231514",
+    "startedAt": "2024-04-16T09:33:24.558156",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--lr",
+        "0.001",
+        "--group_name",
+        "ts_lr_search"
+    ],
+    "state": "running",
+    "program": "-m cs336_basics.train",
+    "codePathLocal": null,
+    "git": {
+        "remote": "git@github.com:stanford-cs336/spring2024-assignment1-basics.git",
+        "commit": "d9eef06925fe01fd6cba6be22795ffa957301c95"
+    },
+    "email": "jiangm@stanford.edu",
+    "root": "/sailhome/jiangm/spring2024-assignment1-basics",
+    "host": "jagupard26.stanford.edu",
+    "username": "jiangm",
+    "executable": "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 1213.0843125000001,
+        "min": 1200.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.014,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.706,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.021,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.019,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1246.059,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.068,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.057,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.103,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1199.991,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.454,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.023,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.644,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1359.75,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1201.099,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.332,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1200.009,
+            "min": 1200.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 218.93587112426758,
+            "used": 124.51438522338867
+        }
+    },
+    "gpu": "NVIDIA TITAN RTX",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 125.53067779541016
+    }
+}

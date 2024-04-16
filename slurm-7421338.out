@@ -1,0 +1,47 @@
+wandb: Currently logged in as: jiangmingjian (l2gen). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /sailhome/jiangm/spring2024-assignment1-basics/wandb/run-20240416_033141-xy4fi9vo
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lr0.001_bs64
+wandb: ⭐️ View project at https://wandb.ai/l2gen/cs336_a1
+wandb: 🚀 View run at https://wandb.ai/l2gen/cs336_a1/runs/xy4fi9vo
+Traceback (most recent call last):
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/train.py", line 125, in <module>
+    save_checkpoint(model, optimizer, current_step, checkpoint_path)
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/utils.py", line 141, in save_checkpoint
+    torch.save({"model_state": model_state, "optimizer_state": optimizer_state, "iteration": iteration}, out)
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/site-packages/torch/serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/site-packages/torch/serialization.py", line 502, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/site-packages/torch/serialization.py", line 473, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+RuntimeError: Parent directory /nlp/scr/jiangm/cs336/a1_data/ckps does not exist.
+wandb: - 0.027 MB of 0.027 MB uploadedwandb: \ 0.033 MB of 0.033 MB uploadedwandb: 
+wandb: Run history:
+wandb:             loss ▁
+wandb:             step ▁
+wandb:             time ▁
+wandb:       valid_loss ▁
+wandb: valid_perplexity ▁
+wandb: 
+wandb: Run summary:
+wandb:             loss 9.3665
+wandb:             step 0
+wandb:             time 0.84284
+wandb:       valid_loss 7.99811
+wandb: valid_perplexity 2975.34302
+wandb: 
+wandb: 🚀 View run lr0.001_bs64 at: https://wandb.ai/l2gen/cs336_a1/runs/xy4fi9vo
+wandb: ⭐️ View project at: https://wandb.ai/l2gen/cs336_a1
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240416_033141-xy4fi9vo/logs
+Namespace(lr=0.001, num_layers=4, num_heads=16, d_model=512, d_ff=2048, attn_pdrop=0.1, residual_pdrop=0.1, batch_size=64, val_batch_size=128, context_length=256, checkpoint='', resume=False, dataset='tinystories', grad_clip=1.0, total_tokens=12800000, pre_norm=False, layer_norm=True, parallel=False, group_name='ts_bs_search')
+Vocab Size: 10000
+Step: 0, Loss: 9.366500854492188
+Validation Loss: 7.998114585876465, Perplexity: 2975.343017578125
+srun: error: sphinx8: task 0: Exited with exit code 1

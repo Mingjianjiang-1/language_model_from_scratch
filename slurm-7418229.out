@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/train_bpe.py", line 225, in <module>
+    input_path = f"{DATA_PATH}/TinyStoriesV2-GPT4-train.txt"
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/train_bpe.py", line 206, in train_bpe_from_dataset
+    gpt2_byte_decoder = {v: k for k, v in gpt2_bytes_to_unicode().items()}
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/train_bpe.py", line 77, in train_bpe
+    raise NotImplementedError("Implement the BPE training algorithm here.")
+NotImplementedError: Implement the BPE training algorithm here.
+srun: error: john17: task 0: Exited with exit code 1

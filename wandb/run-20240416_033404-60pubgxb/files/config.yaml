@@ -1,0 +1,87 @@
+wandb_version: 1
+
+lr:
+  desc: null
+  value: 0.001
+num_layers:
+  desc: null
+  value: 4
+num_heads:
+  desc: null
+  value: 16
+d_model:
+  desc: null
+  value: 512
+d_ff:
+  desc: null
+  value: 2048
+attn_pdrop:
+  desc: null
+  value: 0.1
+residual_pdrop:
+  desc: null
+  value: 0.1
+batch_size:
+  desc: null
+  value: 128
+val_batch_size:
+  desc: null
+  value: 128
+context_length:
+  desc: null
+  value: 256
+checkpoint:
+  desc: null
+  value: ''
+resume:
+  desc: null
+  value: false
+dataset:
+  desc: null
+  value: tinystories
+grad_clip:
+  desc: null
+  value: 1.0
+total_tokens:
+  desc: null
+  value: 12800000
+pre_norm:
+  desc: null
+  value: false
+layer_norm:
+  desc: null
+  value: true
+parallel:
+  desc: null
+  value: false
+group_name:
+  desc: null
+  value: ts_bs_search
+num_steps:
+  desc: null
+  value: 100000
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.14
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1713263644.0
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.10.14
+      5: 0.16.6
+      8:
+      - 5
+      13: linux-x86_64

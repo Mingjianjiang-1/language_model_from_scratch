@@ -1,0 +1,23 @@
+Step: 0, Loss: 9.363866806030273
+Validation Loss: 7.8811564445495605, Perplexity: 2646.931884765625
+Step: 100, Loss: 3.6540701389312744
+Step: 200, Loss: 3.014580249786377
+Step: 300, Loss: 2.63700532913208
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/linecache.py", line 72, in checkcache
+    stat = os.stat(fullname)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/train.py", line 135, in <module>
+    main()
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/train.py", line 108, in main
+    source, target = load_data(train_data, args.batch_size, args.context_length, device)
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/utils.py", line 125, in load_data
+    source = torch.stack([x[idx:idx+context_length] for idx in rand_idx], dim=0).to(device) # (batch_size, context_length)
+KeyboardInterrupt

@@ -1,0 +1,7 @@
+wandb: Currently logged in as: jiangmingjian (l2gen). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /sailhome/jiangm/spring2024-assignment1-basics/wandb/run-20240416_033634-1nirau2z
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lr0.0001_bs256
+wandb: ⭐️ View project at https://wandb.ai/l2gen/cs336_a1
+wandb: 🚀 View run at https://wandb.ai/l2gen/cs336_a1/runs/1nirau2z

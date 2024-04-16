@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/nlp/scr/jiangm/miniconda3/envs/cs336_basics/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/sailhome/jiangm/spring2024-assignment1-basics/cs336_basics/train.py", line 73, in <module>
+    while current_step < args.num_steps:
+NameError: name 'current_step' is not defined
